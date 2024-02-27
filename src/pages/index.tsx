@@ -140,7 +140,7 @@ const IndexPage: React.FC<PageProps> = () => {
   return (
     <main>
       <div>
-        <h1>Home Page</h1>
+        <h1>The Plan</h1>
       </div>
       <div>Header</div>
       <div>Main</div>
