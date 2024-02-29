@@ -4,3 +4,17 @@
 	padding: 0 2em;
 	width: 100%;
 }
+
+@mixin smoothTrans($style: all) {
+	transition: $style 0.2s ease-in-out;
+}
+
+@mixin link {
+	@include smoothTrans;
+
+	&:hover {
+		// text-decoration: underline;
+		// text-underline-offset: 2px;
+		// text-decoration-color: $gold;
+	}
+}
