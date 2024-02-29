@@ -61,3 +61,11 @@ h6 {
 	font-size: 0.875rem;
 	font-weight: bold;
 }
+
+p {
+	margin: 1em 0;
+
+	&:last-child {
+		color: $gold;
+	}
+}
