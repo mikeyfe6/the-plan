@@ -1,0 +1,9 @@
+@import '../configs/globals';
+
+.hero {
+	max-height: calc(100vh - 150px);
+
+	@include mobile {
+		@include fullWidth;
+	}
+}

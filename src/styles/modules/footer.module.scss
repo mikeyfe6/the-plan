@@ -1,0 +1,17 @@
+@import '../configs/globals';
+
+.footer {
+	background: $black;
+	color: $white;
+	min-height: 200px;
+
+	> div {
+		display: flex;
+		justify-content: center;
+		align-self: center;
+
+		@include container;
+	}
+
+	@include fullWidth;
+}

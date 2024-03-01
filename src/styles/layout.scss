@@ -6,12 +6,6 @@
 @import './configs/resets';
 @import './configs/globals';
 
-body {
-	font-family: 'Open Sans', sans-serif;
-
-	@include container;
-}
-
 .the-plan {
 	display: flex;
 	flex-direction: column;
@@ -19,9 +13,12 @@ body {
 	margin: 0;
 }
 
-main {
-	flex: 1;
-	margin: 2em 0;
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: $white;
+	color: $black;
+
+	@include container;
 }
 
 header {
@@ -29,11 +26,21 @@ header {
 	justify-content: space-between;
 }
 
+main {
+	flex: 1;
+	margin: 2em 0;
+}
+
 footer {
 	flex-shrink: 0;
 	display: flex;
 	justify-content: center;
-	margin: 1em 0;
+}
+
+section
+// :not(:last-of-type)
+{
+	margin-bottom: 2em;
 }
 
 h1 {
@@ -71,6 +78,10 @@ p {
 	margin: 1em 0;
 	font-weight: 300;
 	line-height: 1.5;
+
+	&:not(:last-child) {
+		margin-bottom: 0;
+	}
 
 	&:nth-child(3) {
 		color: $gold;
