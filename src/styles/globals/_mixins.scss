@@ -1,4 +1,4 @@
-@mixin container($maxWidth: 1800px) {
+@mixin container($maxWidth: 1600px) {
 	max-width: $maxWidth;
 	margin: 0 auto;
 	padding: 0 2em;
