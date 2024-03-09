@@ -26,4 +26,8 @@
 	right: 50%;
 	margin-left: -50vw;
 	margin-right: -50vw;
-  }
+}
+
+@mixin borderRadius($radius: 0.25em) {
+	border-radius: $radius;
+}

@@ -1,6 +1,21 @@
 @import '../configs/globals';
 
 .hero {
+	background: $black;
+	color: $white;
+	outline: $white 10px solid;
+	width: 75%;
+	margin: -100px auto 0;
+	position: relative;
+	z-index: 1;
+	padding: 2em;
+
+	@include borderRadius;
+
+	@include mobile {
+		width: 100%;
+	}
+
 	p {
 		&:nth-of-type(2) {
 			color: $gold;

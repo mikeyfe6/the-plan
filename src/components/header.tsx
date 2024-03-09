@@ -58,23 +58,17 @@ const Header: React.FC = () => {
 			/>
 			<ul>
 				<li>
-					<button
-						type='button'
-						onClick={() => scrollToSection('home')}>
+					<button type='button' onClick={() => scrollToSection('home')}>
 						home
 					</button>
 				</li>
 				<li>
-					<button
-						type='button'
-						onClick={() => scrollToSection('videos')}>
+					<button type='button' onClick={() => scrollToSection('videos')}>
 						videos
 					</button>
 				</li>
 				<li>
-					<button
-						type='button'
-						onClick={() => scrollToSection('contact')}>
+					<button type='button' onClick={() => scrollToSection('contact')}>
 						contact
 					</button>
 				</li>
