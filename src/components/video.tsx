@@ -14,6 +14,7 @@ const Videos: React.FC = () => {
 				<li>Vid 6</li>
 				<li>Vid 7</li>
 				<li>Vid 8</li>
+				<li>Vid 9</li>
 			</ul>
 		</section>
 	);
