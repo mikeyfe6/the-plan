@@ -1,0 +1,27 @@
+@import '../configs/globals';
+
+.video {
+	ul {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		grid-gap: 2em;
+		margin-top: 5em;
+
+		@include compact {
+			grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+		}
+
+		li {
+			aspect-ratio: 16 / 9;
+			width: 100%;
+			outline: $white 3px solid;
+			background: rgba($white, 0.1);
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			@include borderRadius;
+		}
+	}
+}

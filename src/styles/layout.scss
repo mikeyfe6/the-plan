@@ -43,15 +43,16 @@ section:not(:last-of-type) {
 }
 
 h1 {
-	font-size: 2rem;
-	font-weight: 500;
 	font-family: 'Merriweather', serif;
+	font-size: 2rem;
+	font-weight: 600;
 	margin-bottom: 0.5em;
 }
 
 h2 {
+	font-family: 'Merriweather', serif;
 	font-size: 1.75rem;
-	font-weight: bold;
+	margin-bottom: 0.5em;
 }
 
 h3 {

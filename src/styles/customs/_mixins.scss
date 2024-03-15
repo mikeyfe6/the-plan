@@ -3,6 +3,10 @@
 	margin: 0 auto;
 	padding: 0 2em;
 	width: 100%;
+
+	@include compact {
+		padding: 0 1.5em;
+	}
 }
 
 @mixin smoothTrans($style: all) {

@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Videos from './video';
+
 import * as introStyles from '../styles/modules/intro.module.scss';
 
 const Intro: React.FC = () => {
@@ -30,6 +32,8 @@ const Intro: React.FC = () => {
 				Ipsum, but also the leap into electronic typesetting, remaining
 				essentially unchanged..
 			</p>
+
+			<Videos />
 		</section>
 	);
 };

@@ -50,29 +50,63 @@ const Header: React.FC = () => {
 
 	return (
 		<header className={headerStyles.header}>
-			<StaticImage
-				src='../images/logo.png'
-				alt='Logo'
-				width={100}
-				height={150}
-			/>
-			<ul>
-				<li>
-					<button type='button' onClick={() => scrollToSection('home')}>
-						home
-					</button>
-				</li>
-				<li>
-					<button type='button' onClick={() => scrollToSection('videos')}>
-						videos
-					</button>
-				</li>
-				<li>
-					<button type='button' onClick={() => scrollToSection('contact')}>
-						contact
-					</button>
-				</li>
-			</ul>
+			<div className={headerStyles.banner}>
+				<div>
+					<span>Welkom bij The Plan</span>
+					<ul>
+						<li>
+							<a href='#!' rel='noopener noreferrer' target='_blank'>
+								<i className='fab fa-facebook' />
+							</a>
+						</li>
+						<li>
+							<a href='#!' rel='noopener noreferrer' target='_blank'>
+								<i className='fab fa-instagram' />
+							</a>
+						</li>
+						<li>
+							<a href='#!' rel='noopener noreferrer' target='_blank'>
+								<i className='fab fa-linkedin' />
+							</a>
+						</li>
+						<li>
+							<a href='#!' rel='noopener noreferrer' target='_blank'>
+								<i className='fab fa-youtube' />
+							</a>
+						</li>
+						<li>
+							<a href='#!' rel='noopener noreferrer' target='_blank'>
+								<i className='fab fa-whatsapp' />
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div className={headerStyles.menu}>
+				<StaticImage
+					src='../images/logo.png'
+					alt='Logo'
+					width={100}
+					height={150}
+				/>
+				<ul>
+					<li>
+						<button type='button' onClick={() => scrollToSection('home')}>
+							home
+						</button>
+					</li>
+					<li>
+						<button type='button' onClick={() => scrollToSection('videos')}>
+							videos
+						</button>
+					</li>
+					<li>
+						<button type='button' onClick={() => scrollToSection('contact')}>
+							contact
+						</button>
+					</li>
+				</ul>
+			</div>
 		</header>
 	);
 };

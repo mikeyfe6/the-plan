@@ -10,6 +10,10 @@
 	z-index: 1;
 	padding: 2em;
 
+	@include compact {
+		padding: 1.5em;
+	}
+
 	@include borderRadius;
 
 	@include mobile {
