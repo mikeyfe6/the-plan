@@ -20,6 +20,15 @@ const Header: React.FC = () => {
 		};
 	}, []);
 
+	const getOffsetTop = (element: HTMLElement) => {
+		let offsetTop = 0;
+		while (element) {
+			offsetTop += element.offsetTop;
+			element = element.offsetParent as HTMLElement;
+		}
+		return offsetTop;
+	};
+
 	const scrollToSection = (sectionId: string) => {
 		const section = document.getElementById(sectionId);
 		if (!section) return;
@@ -37,13 +46,13 @@ const Header: React.FC = () => {
 			return;
 		}
 
-		const offset = 175;
+		const offset = 0;
 		const scrollOptions: ScrollToOptions = {
 			behavior: 'smooth',
 		};
 
 		window.scrollTo({
-			top: section.offsetTop - offset,
+			top: getOffsetTop(section) - offset,
 			...scrollOptions,
 		});
 	};

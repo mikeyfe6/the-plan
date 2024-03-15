@@ -4,7 +4,7 @@ import * as videoStyles from '../styles/modules/video.module.scss';
 
 const Videos: React.FC = () => {
 	return (
-		<section className={videoStyles.video}>
+		<section className={videoStyles.video} id='videos'>
 			<ul>
 				<li>Vid 1</li>
 				<li>Vid 2</li>
