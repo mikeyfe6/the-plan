@@ -16,12 +16,19 @@
 			width: 100%;
 			outline: $white 3px solid;
 			background: rgba($white, 0.1);
+			cursor: pointer;
 
 			display: flex;
 			justify-content: center;
 			align-items: center;
 
 			@include borderRadius;
+
+			img {
+				width: 100%;
+				object-fit: cover;
+				overflow: hidden;
+			}
 		}
 	}
 }
