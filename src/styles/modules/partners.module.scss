@@ -1,0 +1,82 @@
+@import '../configs/globals';
+
+.swiper {
+	$this: &;
+
+	&-container {
+		width: 87.5%;
+		margin: 0 auto;
+
+		@include mobile {
+			width: 100%;
+		}
+
+		#{$this}-wrapper {
+			// @include epWrapper;
+
+			@include borderRadius;
+
+			// @media screen and ($small) {
+			// 	border-radius: 0;
+			// }
+
+			#{$this}-slide {
+				overflow: hidden;
+
+				@include borderRadius;
+
+				// @media screen and ($small) {
+				// 	border-radius: 0;
+				// }
+
+				#{$this}-image {
+					// opacity: 0.75;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+
+					img {
+						// object-position: center 25%;
+
+						// @media screen and ($tothemoon) {
+						// 	max-height: 637.5px;
+						// }
+
+						// @media screen and ($massive) {
+						// 	max-height: 600px;
+						// }
+
+						// @media screen and ($superSized) {
+						// 	max-height: 550px;
+						// }
+
+						// @media screen and ($extraLarge) {
+						// 	max-height: 450px;
+						// }
+
+						// @media screen and ($large) {
+						// 	max-height: 400px;
+						// }
+
+						// @media screen and ($medium) {
+						// 	max-height: 300px;
+						// }
+
+						// @media screen and ($small) {
+						// 	max-height: 250px;
+						// 	border-radius: 0;
+						// }
+
+						// @media screen and ($extraSmall) {
+						// 	max-height: 225px;
+						// }
+
+						// @media screen and ($ultraSmall) {
+						// 	max-height: 200px;
+						// }
+					}
+				}
+			}
+		}
+	}
+}

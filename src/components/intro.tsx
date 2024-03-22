@@ -6,7 +6,7 @@ import * as introStyles from '../styles/modules/intro.module.scss';
 
 const Intro: React.FC = () => {
 	return (
-		<section className={introStyles.hero}>
+		<section className={introStyles.intro}>
 			<h1>The Plan</h1>
 
 			<p>

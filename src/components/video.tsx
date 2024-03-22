@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, FC } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import ModalVideo from 'react-modal-video';
 
@@ -6,17 +6,28 @@ import 'react-modal-video/scss/modal-video.scss';
 
 import * as videoStyles from '../styles/modules/video.module.scss';
 
-const Videos: React.FC = () => {
-	const [modalIsOpen, setIsOpen] = useState(false);
+interface VideoQueryResult {
+	allContentfulVideos: {
+		edges: {
+			node: {
+				title: string;
+				videoId: string;
+			};
+		}[];
+	};
+}
+
+const Videos: FC = () => {
+	const [isOpen, setIsOpen] = useState(false);
 	const [activeVideo, setActiveVideo] = useState('');
 
-	function openModal(videoId) {
+	function openModal(videoId: string) {
 		setActiveVideo(videoId);
 		setIsOpen(true);
 	}
 
-	const data = useStaticQuery(graphql`
-		query {
+	const data: VideoQueryResult = useStaticQuery(graphql`
+		query VideosQuery {
 			allContentfulVideos {
 				edges {
 					node {
@@ -45,7 +56,7 @@ const Videos: React.FC = () => {
 
 			<ModalVideo
 				channel='youtube'
-				isOpen={modalIsOpen}
+				isOpen={isOpen}
 				videoId={activeVideo}
 				onClose={() => setIsOpen(false)}
 			/>
