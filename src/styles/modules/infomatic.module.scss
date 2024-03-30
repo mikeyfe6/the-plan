@@ -13,7 +13,7 @@
 
 	@include borderRadius;
 
-	@include mobile {
+	@include phablet {
 		grid-template-columns: 1fr;
 		grid-template-areas:
 			'a'
@@ -63,11 +63,15 @@
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
-			padding: 2em;
+			padding: 5em 2em;
 			// border: $black solid 1px;
 
-			@include mobile {
+			@include phablet {
 				aspect-ratio: auto;
+			}
+
+			@include mobile {
+				padding: 3em 2em;
 			}
 		}
 
