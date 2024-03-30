@@ -11,6 +11,7 @@ const Infomatic: React.FC = () => {
 		<section className={infomaticStyles.infomatic}>
 			<div>
 				<h3>Titel 1</h3>
+				<h4>Dit is een subtitel 1</h4>
 				<p>
 					Lorem Ipsum is simply dummy text of the printing and typesetting
 					industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -25,6 +26,7 @@ const Infomatic: React.FC = () => {
 			</div>
 			<div>
 				<h3>Titel 2</h3>
+				<h4>Dit is een subtitel 2</h4>
 				<p>
 					It was popularised in the 1960s with the release of Letraset sheets
 					containing Lorem Ipsum passages, and more recently with desktop
@@ -38,6 +40,7 @@ const Infomatic: React.FC = () => {
 			</div>
 			<div>
 				<h3>Titel 3</h3>
+				<h4>Dit is een subtitel 3</h4>
 				<p>
 					Contrary to popular belief, Lorem Ipsum is not simply random text. It
 					has roots in a piece of classical Latin literature from 45 BC, making
