@@ -14,7 +14,7 @@ import * as contactStyles from '../styles/modules/contact.module.scss';
 const Contact: React.FC<PageProps> = () => {
 	return (
 		<Layout>
-			<h1>Contact Pagina</h1>
+			<h1>Contact</h1>
 
 			<div className={contactStyles.formImage}>
 				<Form />

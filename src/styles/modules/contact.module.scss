@@ -4,7 +4,10 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	gap: 5em;
+
+	background: linear-gradient(145deg, $black, rgba($black, 0.95));
+
+	@include borderRadius;
 
 	@include tablet {
 		gap: 2.5em;
