@@ -33,7 +33,7 @@
 
 		&:nth-child(1) {
 			grid-area: a;
-			background: linear-gradient(145deg, $black, rgba($black, 0.9));
+			background: linear-gradient(145deg, $black, rgba($black, 0.975));
 			color: $white;
 		}
 
@@ -51,7 +51,7 @@
 
 		&:nth-child(5) {
 			grid-area: e;
-			background: linear-gradient(145deg, $gold, rgba($gold, 0.9));
+			background: linear-gradient(145deg, $gold, rgba($gold, 0.975));
 			color: $black;
 		}
 
