@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 
+import { Link } from 'gatsby';
+
 import { StaticImage } from 'gatsby-plugin-image';
 
 import * as headerStyles from '../styles/modules/header.module.scss';
@@ -46,7 +48,7 @@ const Header: React.FC = () => {
 			return;
 		}
 
-		const offset = 0;
+		const offset = 50;
 		const scrollOptions: ScrollToOptions = {
 			behavior: 'smooth',
 		};
@@ -100,19 +102,22 @@ const Header: React.FC = () => {
 				/>
 				<ul>
 					<li>
-						<button type='button' onClick={() => scrollToSection('home')}>
+						{/* <button type='button' onClick={() => scrollToSection('home')}>
 							home
-						</button>
+						</button> */}
+						<Link to='/'>home</Link>
 					</li>
 					<li>
 						<button type='button' onClick={() => scrollToSection('videos')}>
 							videos
 						</button>
+						{/* <Link to='/videos/'>videos</Link> */}
 					</li>
 					<li>
-						<button type='button' onClick={() => scrollToSection('contact')}>
+						{/* <button type='button' onClick={() => scrollToSection('contact')}>
 							contact
-						</button>
+						</button> */}
+						<Link to='/contact/'>contact</Link>
 					</li>
 				</ul>
 			</div>

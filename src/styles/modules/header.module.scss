@@ -42,7 +42,8 @@
 			padding: 2em 0;
 
 			> li {
-				> button {
+				> button,
+				a {
 					cursor: pointer;
 					font-family: 'Cinzel Decorative', serif;
 					font-size: 1rem;
