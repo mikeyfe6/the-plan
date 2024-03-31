@@ -1,0 +1,45 @@
+@import '../configs/globals';
+
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5em;
+	max-width: 500px;
+
+	label {
+		margin-top: 1em;
+	}
+
+	input,
+	textarea {
+		padding: 0.5em;
+		border: 2px solid rgba($black, 0.5);
+
+		&:focus {
+			border-color: $black;
+		}
+
+		@include borderRadius;
+	}
+
+	textarea {
+		resize: none;
+		min-height: 7.5em;
+	}
+
+	button {
+		margin-top: 2em;
+		padding: 0.5em 1em;
+		letter-spacing: 0.25px;
+		background-color: $black;
+		color: $white;
+		align-self: flex-end;
+		cursor: pointer;
+
+		&:hover {
+			background-color: rgba($black, 0.95);
+		}
+
+		@include borderRadius;
+	}
+}

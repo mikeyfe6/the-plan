@@ -1,0 +1,19 @@
+@import '../configs/globals';
+
+.formImage {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 5em;
+
+	@include tablet {
+		gap: 2.5em;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	> * {
+		flex: 1;
+		width: 100%;
+	}
+}
