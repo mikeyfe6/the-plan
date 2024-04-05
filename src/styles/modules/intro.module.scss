@@ -21,6 +21,8 @@
 	}
 
 	p {
+		max-width: 75ch;
+
 		&:nth-of-type(2) {
 			color: $gold;
 		}

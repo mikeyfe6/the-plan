@@ -3,6 +3,7 @@
 .header {
 	display: flex;
 	flex-direction: column;
+	position: relative;
 
 	.banner {
 		background: linear-gradient(145deg, $black, rgba($black, 0.975));
@@ -33,42 +34,76 @@
 	}
 
 	.menu {
-		display: flex;
-		justify-content: space-between;
+		&.sticky {
+			> div {
+				position: fixed;
+				padding: 1em 2em;
+				left: 50%;
+				top: 0;
+				transform: translateX(-50%);
+				width: 100%;
+				z-index: 2;
+				max-width: 1540px;
 
-		> ul {
+				overflow: hidden;
+				border-radius: 0 0 0.5em 0.5em;
+
+				@include boxShadow;
+
+				@include desktop {
+					border-radius: 0;
+				}
+
+				img {
+					width: 87.5px;
+				}
+			}
+		}
+
+		> div {
 			display: flex;
-			gap: 1em;
-			padding: 2em 0;
+			justify-content: space-between;
+			background: $white;
+			padding: 1em;
 
-			> li {
-				> button,
-				a {
-					cursor: pointer;
-					font-family: 'Cinzel Decorative', serif;
-					font-size: 1rem;
-					letter-spacing: 1px;
+			img {
+				width: 125px;
+			}
 
-					@include compact {
-						font-size: 0.9rem;
-					}
+			> ul {
+				display: flex;
+				gap: 1em;
+				align-items: center;
 
-					&:hover,
-					&.active {
-						&:after {
-							opacity: 1;
+				> li {
+					> button,
+					a {
+						cursor: pointer;
+						font-family: 'Cinzel Decorative', serif;
+						font-size: 1rem;
+						letter-spacing: 1px;
 
-							@include smoothTrans;
+						@include compact {
+							font-size: 0.9rem;
 						}
-					}
 
-					&:after {
-						content: '';
-						display: block;
-						width: 100%;
-						height: 1px;
-						background-color: $gold;
-						opacity: 0;
+						&:hover,
+						&.active {
+							&:after {
+								opacity: 1;
+
+								@include smoothTrans;
+							}
+						}
+
+						&:after {
+							content: '';
+							display: block;
+							width: 100%;
+							height: 1px;
+							background-color: $gold;
+							opacity: 0;
+						}
 					}
 				}
 			}
