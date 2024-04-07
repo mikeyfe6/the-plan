@@ -29,14 +29,14 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-modal-video": "^2.0.1",
-    "sass": "^1.72.0",
+    "sass": "^1.74.1",
     "swiper": "^11.1.0"
   },
   "devDependencies": {
-    "@types/node": "^20.12.2",
-    "@types/react": "^18.2.73",
-    "@types/react-dom": "^18.2.23",
+    "@types/node": "^20.12.5",
+    "@types/react": "^18.2.74",
+    "@types/react-dom": "^18.2.24",
     "@types/react-modal-video": "^1.2.3",
-    "typescript": "^5.4.3"
+    "typescript": "^5.4.4"
   }
 }
