@@ -75,7 +75,7 @@ const Header: React.FC = () => {
 			return;
 		}
 
-		const offset = 75;
+		const offset = 135;
 		const scrollOptions: ScrollToOptions = {
 			behavior: 'smooth',
 		};

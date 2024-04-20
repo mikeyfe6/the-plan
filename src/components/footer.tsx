@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
 			<div>
 				<div>
 					<h4>The Plan</h4>
-					<h5>Contactgegevens:</h5>
+					<h5>Contactgegevens</h5>
 					<ul className={footerStyles.contact}>
 						<li>contact@theplan.nl</li>
 						<li>0612345678</li>

@@ -25,7 +25,6 @@ const Contact: React.FC<PageProps> = () => {
 						style={{
 							maxHeight: '500px',
 							filter: 'grayscale(1)',
-							borderRadius: '0.25em',
 						}}
 					/>
 				</div>

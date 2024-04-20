@@ -35,10 +35,11 @@
 			}
 
 			> h5 {
-				margin-bottom: 1em;
+				margin-bottom: 0.75em;
 				text-decoration: underline;
 				text-underline-offset: 3px;
-				text-decoration-color: $gold;
+				text-decoration-color: $white;
+				color: $gold;
 			}
 
 			> ul.icons {
@@ -46,8 +47,18 @@
 				gap: 0.75em;
 				margin-bottom: 3em;
 
+				@include mobile {
+					gap: 1.25em;
+				}
+
 				> li {
 					font-size: 1.25em;
+
+					&:hover {
+						color: $gold;
+					}
+
+					@include smoothTrans;
 				}
 			}
 
@@ -55,10 +66,14 @@
 				display: flex;
 				flex-direction: column;
 
-				gap: 0.5em;
+				gap: 0.75em;
 
 				> li {
 					font-size: 0.875em;
+				}
+
+				@include mobile {
+					gap: 1em;
 				}
 			}
 
