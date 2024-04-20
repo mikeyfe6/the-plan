@@ -31,6 +31,10 @@ body {
 	color: $black;
 
 	@include container;
+
+	@include toosmall {
+		display: none;
+	}
 }
 
 header {

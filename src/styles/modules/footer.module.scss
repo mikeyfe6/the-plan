@@ -1,7 +1,7 @@
 @import '../configs/globals';
 
 .footer {
-	background: linear-gradient(145deg, $black, rgba($black, 0.95));
+	background: linear-gradient(145deg, rgba($black, 0.95), $black);
 	color: $white;
 	min-height: 200px;
 
@@ -27,6 +27,7 @@
 
 			@include mobile {
 				width: 100%;
+				padding: 1.75em 0;
 			}
 
 			> h4 {

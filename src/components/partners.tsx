@@ -1,13 +1,13 @@
 // TODO: moet een slider worden met images van partners
 
-import React, { useRef } from 'react';
+import React from 'react';
 
-// import { StaticImage } from 'gatsby-plugin-image';
+import { StaticImage } from 'gatsby-plugin-image';
 
 import {
-	Navigation,
-	Pagination,
-	Scrollbar,
+	// Navigation,
+	// Pagination,
+	// Scrollbar,
 	A11y,
 	Parallax,
 	Autoplay,
@@ -21,21 +21,19 @@ import 'swiper/scss';
 // import 'swiper/scss/scrollbar';
 import 'swiper/scss/parallax';
 import 'swiper/scss/autoplay';
+import 'swiper/scss/a11y';
 
 import '../styles/swiper.scss';
 
 import * as partnerStyles from '../styles/modules/partners.module.scss';
 
-import partnerOne from '../images/logo-2.jpeg';
-
 const Hero: React.FC = () => {
 	return (
-		<section className={partnerStyles.swiperContainer}>
+		<section className={partnerStyles.partner}>
 			<Swiper
-				modules={[Scrollbar, A11y, Parallax, Autoplay]}
+				modules={[A11y, Parallax, Autoplay]}
 				spaceBetween={10}
 				slidesPerView={7}
-				centeredSlides={true}
 				loop={true}
 				parallax={true}
 				// navigation
@@ -43,7 +41,7 @@ const Hero: React.FC = () => {
 				// 	clickable: true,
 				// }}
 				autoplay={{
-					delay: 5000,
+					delay: 3500,
 					disableOnInteraction: true,
 				}}
 				breakpoints={{
@@ -63,55 +61,55 @@ const Hero: React.FC = () => {
 						slidesPerView: 7,
 					},
 				}}
-				className={partnerStyles.swiperWrapper}>
-				<SwiperSlide className={partnerStyles.swiperSlide}>
-					<div className={partnerStyles.swiperImage}>
-						<img src={partnerOne} alt='Partner 1' />
+				className={partnerStyles.partnerWrapper}>
+				<SwiperSlide className={partnerStyles.partnerSlide}>
+					<div className={partnerStyles.partnerImage}>
+						<StaticImage src='../images/logo-2.jpeg' alt='Partner 1' />
 					</div>
 				</SwiperSlide>
-				<SwiperSlide className={partnerStyles.swiperSlide}>
-					<div className={partnerStyles.swiperImage}>
-						<img src={partnerOne} alt='Partner 2' />
+				<SwiperSlide className={partnerStyles.partnerSlide}>
+					<div className={partnerStyles.partnerImage}>
+						<StaticImage src='../images/logo-2.jpeg' alt='Partner 2' />
 					</div>
 				</SwiperSlide>
-				<SwiperSlide className={partnerStyles.swiperSlide}>
-					<div className={partnerStyles.swiperImage}>
-						<img src={partnerOne} alt='Partner 3' />
+				<SwiperSlide className={partnerStyles.partnerSlide}>
+					<div className={partnerStyles.partnerImage}>
+						<StaticImage src='../images/logo-2.jpeg' alt='Partner 3' />
 					</div>
 				</SwiperSlide>
-				<SwiperSlide className={partnerStyles.swiperSlide}>
-					<div className={partnerStyles.swiperImage}>
-						<img src={partnerOne} alt='Partner 4' />
+				<SwiperSlide className={partnerStyles.partnerSlide}>
+					<div className={partnerStyles.partnerImage}>
+						<StaticImage src='../images/logo-2.jpeg' alt='Partner 4' />
 					</div>
 				</SwiperSlide>
-				<SwiperSlide className={partnerStyles.swiperSlide}>
-					<div className={partnerStyles.swiperImage}>
-						<img src={partnerOne} alt='Partner 5' />
+				<SwiperSlide className={partnerStyles.partnerSlide}>
+					<div className={partnerStyles.partnerImage}>
+						<StaticImage src='../images/logo-2.jpeg' alt='Partner 5' />
 					</div>
 				</SwiperSlide>
-				<SwiperSlide className={partnerStyles.swiperSlide}>
-					<div className={partnerStyles.swiperImage}>
-						<img src={partnerOne} alt='Partner 6' />
+				<SwiperSlide className={partnerStyles.partnerSlide}>
+					<div className={partnerStyles.partnerImage}>
+						<StaticImage src='../images/logo-2.jpeg' alt='Partner 6' />
 					</div>
 				</SwiperSlide>
-				<SwiperSlide className={partnerStyles.swiperSlide}>
-					<div className={partnerStyles.swiperImage}>
-						<img src={partnerOne} alt='Partner 7' />
+				<SwiperSlide className={partnerStyles.partnerSlide}>
+					<div className={partnerStyles.partnerImage}>
+						<StaticImage src='../images/logo-2.jpeg' alt='Partner 7' />
 					</div>
 				</SwiperSlide>
-				<SwiperSlide className={partnerStyles.swiperSlide}>
-					<div className={partnerStyles.swiperImage}>
-						<img src={partnerOne} alt='Partner 8' />
+				<SwiperSlide className={partnerStyles.partnerSlide}>
+					<div className={partnerStyles.partnerImage}>
+						<StaticImage src='../images/logo-2.jpeg' alt='Partner 8' />
 					</div>
 				</SwiperSlide>
-				<SwiperSlide className={partnerStyles.swiperSlide}>
-					<div className={partnerStyles.swiperImage}>
-						<img src={partnerOne} alt='Partner 9' />
+				<SwiperSlide className={partnerStyles.partnerSlide}>
+					<div className={partnerStyles.partnerImage}>
+						<StaticImage src='../images/logo-2.jpeg' alt='Partner 9 ' />
 					</div>
 				</SwiperSlide>
-				<SwiperSlide className={partnerStyles.swiperSlide}>
-					<div className={partnerStyles.swiperImage}>
-						<img src={partnerOne} alt='Partner 10' />
+				<SwiperSlide className={partnerStyles.partnerSlide}>
+					<div className={partnerStyles.partnerImage}>
+						<StaticImage src='../images/logo-2.jpeg' alt='Partner 10' />
 					</div>
 				</SwiperSlide>
 			</Swiper>

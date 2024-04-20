@@ -1,9 +1,47 @@
 @import '../configs/globals';
 
 .hero {
-	max-height: calc(100vh - 150px);
+	$this: &;
+
+	// max-height: calc(100vh - 150px);
+
+	margin: 0 auto;
+	filter: grayscale(1);
 
 	@include mobile {
 		@include fullWidth;
+	}
+
+	#{$this}-wrapper {
+		filter: grayscale(1);
+
+		@include borderRadius;
+
+		@include mobile {
+			border-radius: 0;
+		}
+
+		#{$this}-slide {
+			overflow: hidden;
+
+			@include borderRadius;
+
+			@include mobile {
+				border-radius: 0;
+			}
+
+			#{$this}-image {
+				opacity: 0.9;
+				max-height: 600px;
+
+				@include compact {
+					max-height: 200px;
+				}
+
+				@include mobile {
+					max-height: 250px;
+				}
+			}
+		}
 	}
 }

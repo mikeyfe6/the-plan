@@ -10,18 +10,21 @@
 	z-index: 1;
 	padding: 2em;
 
+	@include borderRadius;
+
 	@include compact {
 		padding: 1.5em;
+		outline-width: 5px;
 	}
-
-	@include borderRadius;
 
 	@include mobile {
 		width: 100%;
+		margin: -67.5px auto 0;
+		outline-width: 7.5px;
 	}
 
 	p {
-		max-width: 75ch;
+		// max-width: 75ch;
 
 		&:nth-of-type(2) {
 			color: $gold;
